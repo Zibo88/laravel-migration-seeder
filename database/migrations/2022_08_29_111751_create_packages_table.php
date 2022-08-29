@@ -18,7 +18,7 @@ class CreatePackagesTable extends Migration
             $table->mediumInteger('reference');
             $table->string('name', 70);
             $table->string('location', 20);
-            $table->string('hotel', 20);
+            $table->string('hotel', 50);
             $table->tinyInteger('days');
             $table->text('description');
             $table->decimal('price', 8, 2);
