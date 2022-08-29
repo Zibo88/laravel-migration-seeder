@@ -8,8 +8,12 @@ use App\Package;
 class HomeController extends Controller
 {
     public function home() {
-        // $packages = Package::all();
+        $packages = Package::all();
         // dd($packages);
-        return view('home');
+
+        $data = [
+            'packages' => $packages
+        ];
+        return view('home', $data);
     }
 }

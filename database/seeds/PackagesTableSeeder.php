@@ -20,7 +20,7 @@ class PackagesTableSeeder extends Seeder
             $single_package -> name = $faker->sentence(3);
             $single_package -> location = $faker->countryISOAlpha3();
             $single_package -> hotel = $faker->words(2, true);
-            $single_package -> days = $faker->randomDigit();
+            $single_package -> days = $faker->randomDigit(1,30);
             $single_package -> description = $faker->paragraph();
             $single_package -> price = $faker->randomFloat(2, 1, 10000);
             $single_package -> services = $faker->words(2, true);
